@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>menu</title>
+</head>
+<body>
+  <div class="nav">
+    <div class="userbox">
+      <div class="imgbox">
+        <img src="a212a8498237113c724aa82824d66a0f.jpg" alt="">
+      </div>
+      <p class="username">Abdelrahman</p>
+    </div>
+    <div class="menu"></div>
+    <ul class="menut">
+      <li><a href="#"><i class="fa-solid fa-user"></i>my profile</a> </li>
+      <li><a href="#"><i class="fa-solid fa-comment"></i>messages</a></li>
+      <li><a href="#"><i class="fa-regular fa-bell"></i>notification</a></li>
+      <li><a href="#"><i class="fa-solid fa-gear"></i>settings</a></li>
+      <li><a href="#"><i class="fa-solid fa-question"></i>help</a></li>
+      <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i>logout</a></li>
+     </ul> 
+  </div>
+ 
+<script>
+  let menu=document.querySelector(".menu");
+  let nav=document.querySelector(".nav");
+  menu.onclick=function(){
+    nav.classList.toggle("active")
+  }
+
+let text=document.querySelector(".but"),inpot=document.querySelector("input");
+inpot.addEventListener("input",() =>{
+text.style.color=inpot.value;
+});
+
+</script>
+</body>
+</html>
